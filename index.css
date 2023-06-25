@@ -72,16 +72,121 @@ body {
     }
 }
 
-.button {
+.btn {
     border: none;
     border-radius: 8px;
     background-color: #ffd700;
     color: black;
     font-weight: 300;
     text-decoration: none;
-    padding: 8px 12px;
     margin-top: 15px;
+    text-align: center;
 }
+
+/*gallery*/
+.search {
+    height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .search-box {
+    position: relative;
+    height: 55px;
+    margin: 10px 0;
+    width: 90%;
+    justify-content: center;
+    left: 4%;
+}
+
+.search-box i{
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    font-size: 1.2rem;
+    color: blueviolet;
+    translate: translateY(-50%);
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding-left: 40%;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .images {
+    gap: 15px;
+    max-width: 95%;
+    margin-top: 40px;
+    columns: 5 340px;
+}
+
+.images .card {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.images .card .detail {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 15px;
+    transition: bottom 0.1s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.images .card:hover .detail {
+    bottom: 0;
+}
+
+.card .detail .photographer {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.detail .photographer i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.detail .photographer span {
+    font-size: 1.1rem;
+}
+
+.images img {
+    width: 100%;
+}
+
+.card .detail .down {
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 1rem;
+    background: #ffd700;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+}
+
 
 @media only screen and (max-width:399px) {
     #img1 {
