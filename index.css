@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;   
+}
+
+.header .navbar img {
+    width: 52px;
+    height: 40px;
+    margin-left: 1vh;
+    margin-right: 2vh;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    color: #FFF;
+    margin-right: 10px;
+}
+.navbar .nav-item .nav-link ul {
+    margin-right: 5px;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-color: #ffd700;
+    color: black;
+}
+
+#img1 {
+    width: 100%;
+    height: auto;
+}
+
+#head1 {
+    font-weight: 800;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.container h3, h4{
+    color: #FFF;
+}
+.container .text{
+    position: relative;
+    color: #ffd700;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-left: 2px solid #ffd700;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.button {
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd700;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width:399px) {
+    #img1 {
+        width: 110%;
+        height: 90%;
+        margin-top: 10px;
+    }
+
+    #head1 {
+        font-size: 63px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+    #img1 {
+        width: 70%;
+        height: 60%;
+        margin-top: 0px;
+    }
+
+    #head1 {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    #img1 {
+        width: 120%;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    #head1 {
+        font-size: 60px;
+    }
+    .container h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1171px) {
+    #img1 {
+        width: 120%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    #head1 {
+        font-size: 100px;
+
+    }
+}
+
+@media only screen and (min-width:1172px) and (max-width:1439px) {
+    #img1 {
+        width: 140%;
+        height: 100%;
+        margin-top: 15px;
+    }
+
+    #head1 {
+        font-size: 120px;
+    }
+}
