@@ -83,10 +83,22 @@ body {
     text-align: center;
 }
 
+.abc:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .service {
     text-align: center;
     background-color: #212121;
     min-height: 100%;
+}
+
+.service:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card .icon{
